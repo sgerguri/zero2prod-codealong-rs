@@ -1,4 +1,4 @@
-//! src/routes/mod.rs
+//! src/routes.rs
 mod health_check;
 mod subscriptions;
 

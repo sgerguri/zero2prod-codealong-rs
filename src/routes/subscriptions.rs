@@ -5,10 +5,10 @@ use serde::Deserialize;
 
 #[derive(Deserialize)]
 pub struct SubDetails{
-    name: String,
-    email: String
+    pub name: String,
+    pub email: String
 }
 
-pub async fn subscribe(form: Form<SubDetails>) -> HttpResponse {
+pub async fn subscribe(_form: Form<SubDetails>) -> HttpResponse {
     HttpResponse::Ok().finish()
 }
